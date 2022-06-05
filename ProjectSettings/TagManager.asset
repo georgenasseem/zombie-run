@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TopNearGrass
+  - Enemy
+  - PlayerHolder
+  - Ground
+  - Block
+  - Obstacle
+  - T-Rex
+  - GameManager
+  - RewardButton
+  - SkinsButton
+  - MenuManager
+  - AnimObject
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - BG
+  - Enemy
+  - 
+  - 
+  - 
+  - Icons
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Other
+    uniqueID: 920433701
+    locked: 0
+  - name: Icons
+    uniqueID: 26593887
+    locked: 0
