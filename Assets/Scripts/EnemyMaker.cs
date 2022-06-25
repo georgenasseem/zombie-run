@@ -14,11 +14,12 @@ public class EnemyMaker : MonoBehaviour
     private GameObject spawnedMonsterL;
     private GameObject spawnedMonsterR;
     private Vector3 spawnPos;
+    public int spaceBetweenEnemies = 11;
     private int randomIndex;
     private int randomSide;
     private int oldRandomSide;
     private bool firstLap = true;
-    private int minTimeForSpawn = 2, maxTimeForSpawn = 4;
+    private int minTimeForSpawn = 2, maxTimeForSpawn = 5;
 
     private void Start()
     {
@@ -36,22 +37,21 @@ public class EnemyMaker : MonoBehaviour
             {
                 spawnedMonsterL = Instantiate(monsters[randomIndex]);
                 spawnedMonsterL.transform.position = initialPos[i].transform.position;
-                spawnedMonsterL.GetComponent<Monster>().speed = 2f;
-                spawnedMonsterL.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
+                spawnedMonsterL.GetComponent<Monster>().speed = 2.7f;
+                spawnedMonsterL.transform.localScale = new Vector3(1.66f, 1.66f, 1f);
             }
             else
             {
                 spawnedMonsterR = Instantiate(monsters[randomIndex]);
                 spawnedMonsterR.transform.position = initialPos[i].transform.position;
-                spawnedMonsterR.GetComponent<Monster>().speed = -2f;
-                spawnedMonsterR.transform.localScale = new Vector3(-1.2f, 1.2f, 1f);
+                spawnedMonsterR.GetComponent<Monster>().speed = -2.7f;
+                spawnedMonsterR.transform.localScale = new Vector3(-1.66f, 1.66f, 1f);
             }
         }
 
         while (!gameManager.isPaused)
         {
             yield return new WaitForSeconds(Random.Range(minTimeForSpawn, maxTimeForSpawn));
-            randomSide = Random.Range(0, 2);
 
             if(InDistance())
             {
@@ -61,15 +61,15 @@ public class EnemyMaker : MonoBehaviour
                 {
                     spawnedMonsterL = Instantiate(monsters[randomIndex]);
                     spawnedMonsterL.transform.position = leftPos.position;
-                    spawnedMonsterL.GetComponent<Monster>().speed = 2f;
-                    spawnedMonsterL.transform.localScale = new Vector3(1.2f, 1.2f, 1f);
+                    spawnedMonsterL.GetComponent<Monster>().speed = 2.7f;
+                    spawnedMonsterL.transform.localScale = new Vector3(1.66f, 1.66f, 1f);
                 }
                 else
                 {
                     spawnedMonsterR = Instantiate(monsters[randomIndex]);
                     spawnedMonsterR.transform.position = rightPos.position;
-                    spawnedMonsterR.GetComponent<Monster>().speed = -2f;
-                    spawnedMonsterR.transform.localScale = new Vector3(-1.2f, 1.2f, 1f);
+                    spawnedMonsterR.GetComponent<Monster>().speed = -2.7f;
+                    spawnedMonsterR.transform.localScale = new Vector3(-1.66f, 1.66f, 1f);
                 }
             }
         }
@@ -77,31 +77,30 @@ public class EnemyMaker : MonoBehaviour
 
    private bool InDistance()
    {
-       if(firstLap)
-       {
-           firstLap = false;
-           return true;
-       }
+       randomSide = Random.Range(0, 2);
+       spaceBetweenEnemies = Random.Range(12, 16);
 
        if(randomSide == 0)
        {
-           if(Mathf.Abs(leftPos.position.x - spawnedMonsterL.transform.position.x) > 11)
+           if(Mathf.Abs(leftPos.position.x - spawnedMonsterL.transform.position.x) > spaceBetweenEnemies)
            {
                return true;
            }
            else
            {
+               //Debug.Log("Left:" + Mathf.Abs(leftPos.position.x - spawnedMonsterL.transform.position.x));
                return false;
            }
        }
        else
        {
-           if(Mathf.Abs(rightPos.position.x - spawnedMonsterR.transform.position.x) > 11)
+           if(Mathf.Abs(rightPos.position.x - spawnedMonsterR.transform.position.x) > spaceBetweenEnemies)
            {
                return true;
            }
            else
            {
+               Debug.Log("Right:" + Mathf.Abs(rightPos.position.x - spawnedMonsterR.transform.position.x));
                return false;
            }
        }

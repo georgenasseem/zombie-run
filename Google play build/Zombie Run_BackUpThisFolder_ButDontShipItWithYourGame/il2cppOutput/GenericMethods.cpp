@@ -22679,7 +22679,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObjectExtensions_En
 		NullCheck(L_1);
 		L_1->___androidJavaList_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___androidJavaList_0), (void*)L_2);
-		// var size = androidJavaList?.Call<int>("size") ?? 0;
 		U3CU3Ec__DisplayClass0_0_1_t2AA679685FE7CBE8A9DDB1D153795C48E0CB6165* L_3 = V_0;
 		NullCheck(L_3);
 		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_4 = (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)L_3->___androidJavaList_0;
@@ -22709,7 +22708,6 @@ IL_001a:
 IL_0029:
 	{
 		V_1 = G_B3_0;
-		// return Enumerable.Range(0, size).Select(i => androidJavaList.Call<T>("get", i));
 		int32_t L_8 = V_1;
 		RuntimeObject* L_9;
 		L_9 = Enumerable_Range_m7AF0E8CE2033329DC342B7A260990A9822A0720A(0, L_8, NULL);
@@ -22732,10 +22730,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidJavaObjectWrapper_Call_TisBoolean
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// var obj = (AndroidJavaObject) androidJavaObject;
 		RuntimeObject* L_0;
 		L_0 = AndroidJavaObjectWrapper_get_androidJavaObject_m3D86334FA9EC8746CCF883764BEBC0C5EAC32012_inline(__this, NULL);
-		// return obj.Call<ReturnType>(methodName, args);
 		String_t* L_1 = ___methodName0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___args1;
 		NullCheck(((AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)CastclassClass((RuntimeObject*)L_0, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var)));
@@ -22754,10 +22750,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AndroidJavaObjectWrapper_Call_TisInt3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// var obj = (AndroidJavaObject) androidJavaObject;
 		RuntimeObject* L_0;
 		L_0 = AndroidJavaObjectWrapper_get_androidJavaObject_m3D86334FA9EC8746CCF883764BEBC0C5EAC32012_inline(__this, NULL);
-		// return obj.Call<ReturnType>(methodName, args);
 		String_t* L_1 = ___methodName0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___args1;
 		NullCheck(((AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)CastclassClass((RuntimeObject*)L_0, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var)));
@@ -22776,10 +22770,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t AndroidJavaObjectWrapper_Call_TisInt6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// var obj = (AndroidJavaObject) androidJavaObject;
 		RuntimeObject* L_0;
 		L_0 = AndroidJavaObjectWrapper_get_androidJavaObject_m3D86334FA9EC8746CCF883764BEBC0C5EAC32012_inline(__this, NULL);
-		// return obj.Call<ReturnType>(methodName, args);
 		String_t* L_1 = ___methodName0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___args1;
 		NullCheck(((AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)CastclassClass((RuntimeObject*)L_0, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var)));
@@ -22798,10 +22790,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObjectWrapper_Call_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// var obj = (AndroidJavaObject) androidJavaObject;
 		RuntimeObject* L_0;
 		L_0 = AndroidJavaObjectWrapper_get_androidJavaObject_m3D86334FA9EC8746CCF883764BEBC0C5EAC32012_inline(__this, NULL);
-		// return obj.Call<ReturnType>(methodName, args);
 		String_t* L_1 = ___methodName0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___args1;
 		NullCheck(((AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)CastclassClass((RuntimeObject*)L_0, AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var)));
@@ -27366,7 +27356,6 @@ IL_0044:
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObjectWrapper_get_androidJavaObject_m3D86334FA9EC8746CCF883764BEBC0C5EAC32012_inline (AndroidJavaObjectWrapper_tD30F7719CCFCEFF5AB2203F7102D0DBF9A0FE764* __this, const RuntimeMethod* method) 
 {
 	{
-		// IDisposable androidJavaObject { get; }
 		RuntimeObject* L_0 = __this->___U3CandroidJavaObjectU3Ek__BackingField_0;
 		return L_0;
 	}

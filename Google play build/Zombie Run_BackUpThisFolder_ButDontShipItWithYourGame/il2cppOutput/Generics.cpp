@@ -10530,7 +10530,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__DisplayClass0_0_1_U3C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// return Enumerable.Range(0, size).Select(i => androidJavaList.Call<T>("get", i));
 		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)__this->___androidJavaList_0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
@@ -10573,18 +10572,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_1_U3CStartUIU3
 	}
 	int32_t V_0 = 0;
 	{
-		// T value = (T)(object)codeValue;
 		int32_t L_0 = ___codeValue1;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_1);
 		V_0 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 0)))));
-		// callback (result, value);
 		Action_2_t562F5229B3319F83414D174041EF98B798BFDB4E* L_3 = (Action_2_t562F5229B3319F83414D174041EF98B798BFDB4E*)__this->___callback_0;
 		bool L_4 = ___result0;
 		int32_t L_5 = V_0;
 		NullCheck(L_3);
 		((  void (*) (Action_2_t562F5229B3319F83414D174041EF98B798BFDB4E*, bool, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(L_3, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// });
 		return;
 	}
 }
@@ -10615,18 +10611,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_1_U3CStartUIU3
 	}
 	RuntimeObject* V_0 = NULL;
 	{
-		// T value = (T)(object)codeValue;
 		int32_t L_0 = ___codeValue1;
 		int32_t L_1 = L_0;
 		RuntimeObject* L_2 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_1);
 		V_0 = ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->klass->rgctx_data, 0)));
-		// callback (result, value);
 		Action_2_t4E94B0FCA1084D7868DB11A50767A4916CA3D3FB* L_3 = (Action_2_t4E94B0FCA1084D7868DB11A50767A4916CA3D3FB*)__this->___callback_0;
 		bool L_4 = ___result0;
 		RuntimeObject* L_5 = V_0;
 		NullCheck(L_3);
 		((  void (*) (Action_2_t4E94B0FCA1084D7868DB11A50767A4916CA3D3FB*, bool, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 2)))(L_3, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 2));
-		// });
 		return;
 	}
 }

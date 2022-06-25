@@ -33292,16 +33292,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIFakeStore_StartUI_TisInt32Enum_tCBAC8B
 		NullCheck(L_1);
 		L_1->___callback_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___callback_0), (void*)L_2);
-		// List<string> options = new List<string>();
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_3 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_3, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
 		V_1 = L_3;
-		// options.Add(SuccessString);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_4 = V_1;
 		NullCheck(L_4);
 		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_4, _stringLiteral6477FB0CBF4E978465F5CB8C51161A34304B3890, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
-		// foreach (T code in Enum.GetValues(typeof(T)))
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_5 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 2)) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_6;
@@ -33349,13 +33346,11 @@ IL_0076:
 
 IL_0036_1:
 			{
-				// foreach (T code in Enum.GetValues(typeof(T)))
 				RuntimeObject* L_12 = V_6;
 				NullCheck(L_12);
 				RuntimeObject* L_13;
 				L_13 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_12);
 				V_7 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_13, il2cpp_rgctx_data(method->rgctx_data, 3)))));
-				// options.Add(code.ToString());
 				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_14 = V_1;
 				Il2CppFakeBox<int32_t> L_15(il2cpp_rgctx_data(method->rgctx_data, 3), (&V_7));
 				String_t* L_16;
@@ -33366,7 +33361,6 @@ IL_0036_1:
 
 IL_0057_1:
 			{
-				// foreach (T code in Enum.GetValues(typeof(T)))
 				RuntimeObject* L_17 = V_6;
 				NullCheck(L_17);
 				bool L_18;
@@ -33388,23 +33382,14 @@ IL_0057_1:
 
 IL_0077:
 	{
-		// Action<bool,int> callbackWrapper = new Action<bool,int> ((bool result, int codeValue) => {
-		//     // TRICKY: Would prefer to use .NET 4+'s dynamic keyword over double-casting to what I know is an enum type.
-		//     T value = (T)(object)codeValue;
-		//     callback (result, value);
-		// });
 		U3CU3Ec__DisplayClass10_0_1_t46054C260876D9B2B853384412F62570369CBACB* L_19 = V_0;
 		Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39* L_20 = (Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39*)il2cpp_codegen_object_new(Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39_il2cpp_TypeInfo_var);
 		NullCheck(L_20);
 		Action_2__ctor_m5762D54CF67A784A85288817EBF0EDCB74A10136(L_20, (RuntimeObject*)L_19, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 5)), NULL);
 		V_2 = L_20;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_3 = (String_t*)NULL;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_4 = (String_t*)NULL;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_5 = (String_t*)NULL;
-		// if (dialogType == DialogType.Purchase)
 		int32_t L_21 = ___dialogType1;
 		if (L_21)
 		{
@@ -33412,12 +33397,10 @@ IL_0077:
 		}
 	}
 	{
-		// title = CreatePurchaseQuestion ((ProductDefinition)model);
 		RuntimeObject* L_22 = ___model0;
 		String_t* L_23;
 		L_23 = UIFakeStore_CreatePurchaseQuestion_mC3B18AD45DE1E6C48EE133B328E03CD36F3A2796(__this, ((ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517*)CastclassClass((RuntimeObject*)L_22, ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517_il2cpp_TypeInfo_var)), NULL);
 		V_3 = L_23;
-		// if (UIMode == FakeStoreUIMode.DeveloperUser)
 		int32_t L_24 = (int32_t)((FakeStore_tB59149351CDC01449882282D7CBFB8269FDEC16F*)__this)->___UIMode_16;
 		if ((!(((uint32_t)L_24) == ((uint32_t)2))))
 		{
@@ -33425,21 +33408,18 @@ IL_0077:
 		}
 	}
 	{
-		// okayButton = "OK";
 		V_4 = _stringLiteral1AE348EAFA097AB898941EAFE912D711A407DA10;
 		goto IL_00ed;
 	}
 
 IL_00ae:
 	{
-		// okayButton = "Buy";
 		V_4 = _stringLiteral2D8094826FE3A8FA2C7F771E946D9A34C4451B7E;
 		goto IL_00ed;
 	}
 
 IL_00b7:
 	{
-		// else if (dialogType == DialogType.RetrieveProducts)
 		int32_t L_25 = ___dialogType1;
 		if ((!(((uint32_t)L_25) == ((uint32_t)1))))
 		{
@@ -33447,19 +33427,16 @@ IL_00b7:
 		}
 	}
 	{
-		// title = CreateRetrieveProductsQuestion ((ReadOnlyCollection<ProductDefinition>)model);
 		RuntimeObject* L_26 = ___model0;
 		String_t* L_27;
 		L_27 = UIFakeStore_CreateRetrieveProductsQuestion_mA8F54CD710F267A62CA5F7F8A03AE124919B1D3F(__this, ((ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E*)CastclassClass((RuntimeObject*)L_26, ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E_il2cpp_TypeInfo_var)), NULL);
 		V_3 = L_27;
-		// okayButton = "OK";
 		V_4 = _stringLiteral1AE348EAFA097AB898941EAFE912D711A407DA10;
 		goto IL_00ed;
 	}
 
 IL_00d1:
 	{
-		// Debug.LogError ("Unrecognized DialogType " + dialogType);
 		Il2CppFakeBox<int32_t> L_28(DialogType_t6B1AAA54AE3FAC69D1C4D06E38AFBFEF605F4EAE_il2cpp_TypeInfo_var, (&___dialogType1));
 		String_t* L_29;
 		L_29 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_28), NULL);
@@ -33471,9 +33448,7 @@ IL_00d1:
 
 IL_00ed:
 	{
-		// cancelButton = "Cancel";
 		V_5 = _stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674;
-		// return StartUI (title, okayButton, cancelButton, options, callbackWrapper);
 		String_t* L_31 = V_3;
 		String_t* L_32 = V_4;
 		String_t* L_33 = V_5;
@@ -33528,16 +33503,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIFakeStore_StartUI_TisRuntimeObject_mE7
 		NullCheck(L_1);
 		L_1->___callback_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___callback_0), (void*)L_2);
-		// List<string> options = new List<string>();
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_3 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_3, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
 		V_1 = L_3;
-		// options.Add(SuccessString);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_4 = V_1;
 		NullCheck(L_4);
 		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_4, _stringLiteral6477FB0CBF4E978465F5CB8C51161A34304B3890, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
-		// foreach (T code in Enum.GetValues(typeof(T)))
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_5 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 2)) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_6;
@@ -33585,13 +33557,11 @@ IL_0076:
 
 IL_0036_1:
 			{
-				// foreach (T code in Enum.GetValues(typeof(T)))
 				RuntimeObject* L_12 = V_6;
 				NullCheck(L_12);
 				RuntimeObject* L_13;
 				L_13 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_12);
 				V_7 = ((RuntimeObject*)Castclass((RuntimeObject*)L_13, il2cpp_rgctx_data(method->rgctx_data, 3)));
-				// options.Add(code.ToString());
 				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_14 = V_1;
 				NullCheck((V_7));
 				String_t* L_15;
@@ -33602,7 +33572,6 @@ IL_0036_1:
 
 IL_0057_1:
 			{
-				// foreach (T code in Enum.GetValues(typeof(T)))
 				RuntimeObject* L_16 = V_6;
 				NullCheck(L_16);
 				bool L_17;
@@ -33624,23 +33593,14 @@ IL_0057_1:
 
 IL_0077:
 	{
-		// Action<bool,int> callbackWrapper = new Action<bool,int> ((bool result, int codeValue) => {
-		//     // TRICKY: Would prefer to use .NET 4+'s dynamic keyword over double-casting to what I know is an enum type.
-		//     T value = (T)(object)codeValue;
-		//     callback (result, value);
-		// });
 		U3CU3Ec__DisplayClass10_0_1_t052620F473AD3AEC4EAA5B1EED82F07C60FFD9FC* L_18 = V_0;
 		Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39* L_19 = (Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39*)il2cpp_codegen_object_new(Action_2_t865B9CE23441CB6A6D9DD9D6C0BA8C011FBC5F39_il2cpp_TypeInfo_var);
 		NullCheck(L_19);
 		Action_2__ctor_m5762D54CF67A784A85288817EBF0EDCB74A10136(L_19, (RuntimeObject*)L_18, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 5)), NULL);
 		V_2 = L_19;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_3 = (String_t*)NULL;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_4 = (String_t*)NULL;
-		// string title = null, okayButton = null, cancelButton = null;
 		V_5 = (String_t*)NULL;
-		// if (dialogType == DialogType.Purchase)
 		int32_t L_20 = ___dialogType1;
 		if (L_20)
 		{
@@ -33648,12 +33608,10 @@ IL_0077:
 		}
 	}
 	{
-		// title = CreatePurchaseQuestion ((ProductDefinition)model);
 		RuntimeObject* L_21 = ___model0;
 		String_t* L_22;
 		L_22 = UIFakeStore_CreatePurchaseQuestion_mC3B18AD45DE1E6C48EE133B328E03CD36F3A2796(__this, ((ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517*)CastclassClass((RuntimeObject*)L_21, ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517_il2cpp_TypeInfo_var)), NULL);
 		V_3 = L_22;
-		// if (UIMode == FakeStoreUIMode.DeveloperUser)
 		int32_t L_23 = (int32_t)((FakeStore_tB59149351CDC01449882282D7CBFB8269FDEC16F*)__this)->___UIMode_16;
 		if ((!(((uint32_t)L_23) == ((uint32_t)2))))
 		{
@@ -33661,21 +33619,18 @@ IL_0077:
 		}
 	}
 	{
-		// okayButton = "OK";
 		V_4 = _stringLiteral1AE348EAFA097AB898941EAFE912D711A407DA10;
 		goto IL_00ed;
 	}
 
 IL_00ae:
 	{
-		// okayButton = "Buy";
 		V_4 = _stringLiteral2D8094826FE3A8FA2C7F771E946D9A34C4451B7E;
 		goto IL_00ed;
 	}
 
 IL_00b7:
 	{
-		// else if (dialogType == DialogType.RetrieveProducts)
 		int32_t L_24 = ___dialogType1;
 		if ((!(((uint32_t)L_24) == ((uint32_t)1))))
 		{
@@ -33683,19 +33638,16 @@ IL_00b7:
 		}
 	}
 	{
-		// title = CreateRetrieveProductsQuestion ((ReadOnlyCollection<ProductDefinition>)model);
 		RuntimeObject* L_25 = ___model0;
 		String_t* L_26;
 		L_26 = UIFakeStore_CreateRetrieveProductsQuestion_mA8F54CD710F267A62CA5F7F8A03AE124919B1D3F(__this, ((ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E*)CastclassClass((RuntimeObject*)L_25, ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E_il2cpp_TypeInfo_var)), NULL);
 		V_3 = L_26;
-		// okayButton = "OK";
 		V_4 = _stringLiteral1AE348EAFA097AB898941EAFE912D711A407DA10;
 		goto IL_00ed;
 	}
 
 IL_00d1:
 	{
-		// Debug.LogError ("Unrecognized DialogType " + dialogType);
 		Il2CppFakeBox<int32_t> L_27(DialogType_t6B1AAA54AE3FAC69D1C4D06E38AFBFEF605F4EAE_il2cpp_TypeInfo_var, (&___dialogType1));
 		String_t* L_28;
 		L_28 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_27), NULL);
@@ -33707,9 +33659,7 @@ IL_00d1:
 
 IL_00ed:
 	{
-		// cancelButton = "Cancel";
 		V_5 = _stringLiteral93717CD8FCD45BAB4F15D3BACC989A6A93BA2674;
-		// return StartUI (title, okayButton, cancelButton, options, callbackWrapper);
 		String_t* L_30 = V_3;
 		String_t* L_31 = V_4;
 		String_t* L_32 = V_5;
@@ -34153,7 +34103,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnityUtil_FindInstanceOfType_T
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// return (T) FindObjectOfType(typeof (T));
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_1;
@@ -34184,7 +34133,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 	int32_t V_4 = 0;
 	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* V_5 = NULL;
 	{
-		// GameObject[] objects = (GameObject[]) FindObjectsOfType(typeof (GameObject));
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_0_0_0_var) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_1;
@@ -34192,12 +34140,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_2;
 		L_2 = Object_FindObjectsOfType_m26A7F8711A45112BF7D30F5273B79DE1F3A7C13F(L_1, NULL);
-		// List<T> result = new List<T>();
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_3 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
 		NullCheck(L_3);
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_3, il2cpp_rgctx_method(method->rgctx_data, 1));
 		V_0 = L_3;
-		// foreach (GameObject o in objects)
 		V_1 = ((GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)Castclass((RuntimeObject*)L_2, GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var));
 		V_2 = 0;
 		goto IL_005f;
@@ -34205,13 +34151,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 
 IL_001f:
 	{
-		// foreach (GameObject o in objects)
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_4 = V_1;
 		int32_t L_5 = V_2;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		// foreach (MonoBehaviour mono in o.GetComponents<MonoBehaviour>())
 		NullCheck(L_7);
 		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_8;
 		L_8 = GameObject_GetComponents_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m0CFAE58E748FAFFB98501EFAE1703F6F39E8BE72(L_7, GameObject_GetComponents_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m0CFAE58E748FAFFB98501EFAE1703F6F39E8BE72_RuntimeMethod_var);
@@ -34222,14 +34166,12 @@ IL_001f:
 
 IL_002d:
 	{
-		// foreach (MonoBehaviour mono in o.GetComponents<MonoBehaviour>())
 		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_9 = V_3;
 		int32_t L_10 = V_4;
 		NullCheck(L_9);
 		int32_t L_11 = L_10;
 		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
 		V_5 = L_12;
-		// if (mono is T)
 		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_13 = V_5;
 		if (!((RuntimeObject*)IsInst((RuntimeObject*)L_13, il2cpp_rgctx_data(method->rgctx_data, 2))))
 		{
@@ -34237,7 +34179,6 @@ IL_002d:
 		}
 	}
 	{
-		// result.Add(mono as T);
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_14 = V_0;
 		MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* L_15 = V_5;
 		NullCheck(L_14);
@@ -34252,7 +34193,6 @@ IL_004e:
 
 IL_0054:
 	{
-		// foreach (MonoBehaviour mono in o.GetComponents<MonoBehaviour>())
 		int32_t L_17 = V_4;
 		MonoBehaviourU5BU5D_tEB91860B3CEE2D63A7833A2842EB9CE4547DDBD7* L_18 = V_3;
 		NullCheck(L_18);
@@ -34268,7 +34208,6 @@ IL_0054:
 
 IL_005f:
 	{
-		// foreach (GameObject o in objects)
 		int32_t L_20 = V_2;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_21 = V_1;
 		NullCheck(L_21);
@@ -34278,7 +34217,6 @@ IL_005f:
 		}
 	}
 	{
-		// return result.ToArray();
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_22 = V_0;
 		NullCheck(L_22);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_23;
@@ -34298,7 +34236,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnityUtil_LoadResourceInstance
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// return ((GameObject) Instantiate(Resources.Load(typeof (T).ToString()))).GetComponent<T>();
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		Type_t* L_1;

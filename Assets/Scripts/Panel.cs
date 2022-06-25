@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Panel : MonoBehaviour
 {
-    RectTransform RectTransform;
     MenuManager menuManager;
 
     void Start()
     {
-        RectTransform = GetComponent<RectTransform>();
-
         if(GameObject.FindGameObjectWithTag("MenuManager") != null)
         {
             menuManager = GameObject.FindGameObjectWithTag("MenuManager").GetComponent<MenuManager>();
@@ -25,6 +22,5 @@ public class Panel : MonoBehaviour
         }
         
         gameObject.SetActive(false);
-        RectTransform.anchoredPosition = new Vector2(540, 960);
     }
 }

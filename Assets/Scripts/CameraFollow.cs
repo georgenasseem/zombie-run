@@ -28,7 +28,7 @@ public class CameraFollow : MonoBehaviour
             return;
         }
 
-        if(!(playerPos.position.x >= 54.8 || playerPos.position.x <= -54.65))
+        if(!(playerPos.position.x >= 90 || playerPos.position.x <= -90))
         {
             tempPos = transform.position;
             tempPos.x = playerPos.position.x;

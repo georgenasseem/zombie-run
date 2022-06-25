@@ -4214,7 +4214,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnPurchaseFailedEvent__ctor_mC3846DC2020
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StandardPurchasingModule_set_useFakeStoreUIMode_m2221C886EC8FF153B0C2210AF2EF6DED271B826D_inline (StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489* __this, int32_t ___value0, const RuntimeMethod* method) 
 {
 	{
-		// public FakeStoreUIMode useFakeStoreUIMode { get; set; }
 		int32_t L_0 = ___value0;
 		__this->___U3CuseFakeStoreUIModeU3Ek__BackingField_12 = L_0;
 		return;
@@ -4223,7 +4222,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StandardPurchasingModule_set
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalog_get_allProducts_m93A191445C8495D516A695D8708996C8790EF1C7_inline (ProductCatalog_t6F6B11865D55D089683F954BB3B223C00B33F8E1* __this, const RuntimeMethod* method) 
 {
 	{
-		// public ICollection<ProductCatalogItem> allProducts => products;
 		List_1_tF9E4155F905E46DBB10A4779C193F32620147794* L_0 = __this->___products_4;
 		return L_0;
 	}
@@ -4263,7 +4261,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t StandardPurchasingModule_get_appStore_m19E96FCA4517781E9166DAA7E3413D7B0D61EE74_inline (StandardPurchasingModule_t988B3F7D9F73F5C6458E0DBB35AC92CDD3DA2489* __this, const RuntimeMethod* method) 
 {
 	{
-		// return m_AppStorePlatform;
 		int32_t L_0 = __this->___m_AppStorePlatform_3;
 		return L_0;
 	}
@@ -4303,7 +4300,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductMetadata_get_loc
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalogItem_get_allStoreIDs_m1BB9AC26346BAE2B25F2557106CF54F1F0250152_inline (ProductCatalogItem_tBBB809AC7547B118E718170833CB6729F80F4215* __this, const RuntimeMethod* method) 
 {
 	{
-		// return storeIDs;
 		List_1_t86E14981FC609E067B0863BFFD976BE10F7D760C* L_0 = __this->___storeIDs_2;
 		return L_0;
 	}
@@ -4311,7 +4307,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalogItem
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalogItem_get_Payouts_m555FC3D209B787F27BE8299B43A5878A7279666D_inline (ProductCatalogItem_tBBB809AC7547B118E718170833CB6729F80F4215* __this, const RuntimeMethod* method) 
 {
 	{
-		// return payouts;
 		List_1_t48BDDF48EBA5EFE2DF289544A05B3FA63F1C6DA5* L_0 = __this->___payouts_10;
 		return L_0;
 	}
@@ -4319,7 +4314,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ProductCatalogItem
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductCatalogPayout_get_typeString_mDC2749C7C814424036321E9FE9F4443FCFCF1047_inline (ProductCatalogPayout_tE89C644B8939AE7B342D29BE28762A7A1700FDD2* __this, const RuntimeMethod* method) 
 {
 	{
-		// return t;
 		String_t* L_0 = __this->___t_0;
 		return L_0;
 	}
@@ -4327,7 +4321,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductCatalogPayout_ge
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductCatalogPayout_get_subtype_m91A5CF105358C819EDB1894EA3DB00F669905B4E_inline (ProductCatalogPayout_tE89C644B8939AE7B342D29BE28762A7A1700FDD2* __this, const RuntimeMethod* method) 
 {
 	{
-		// return st;
 		String_t* L_0 = __this->___st_2;
 		return L_0;
 	}
@@ -4335,7 +4328,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductCatalogPayout_ge
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double ProductCatalogPayout_get_quantity_m4239B8AA7AF8C60D2FA8B9F8656B57FDD2CA6CF2_inline (ProductCatalogPayout_tE89C644B8939AE7B342D29BE28762A7A1700FDD2* __this, const RuntimeMethod* method) 
 {
 	{
-		// return q;
 		double L_0 = __this->___q_3;
 		return L_0;
 	}
@@ -4343,7 +4335,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR double ProductCatalogPayout_get_q
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ProductCatalogPayout_get_data_m5485BB13535F49FD58397B278767F60D1692F2CB_inline (ProductCatalogPayout_tE89C644B8939AE7B342D29BE28762A7A1700FDD2* __this, const RuntimeMethod* method) 
 {
 	{
-		// return d;
 		String_t* L_0 = __this->___d_5;
 		return L_0;
 	}

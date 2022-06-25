@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
 
         if(!PlayerPrefs.HasKey("Music"))
         {
-             PlayerPrefs.SetString("Music", music);
+            PlayerPrefs.SetString("Music", music);
         }
 
         if(PlayerPrefs.GetString("Music") == "on")

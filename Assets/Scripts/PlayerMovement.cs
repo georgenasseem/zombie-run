@@ -103,18 +103,18 @@ public class PlayerMovement : MonoBehaviour
     void IncreaseMove()
     {
         speedTimer += 1;
-        if(speedTimer == 500 && speedCounter < 9)
+        if(speedTimer == 550 && speedCounter < 9)
         {
             speedCounter++;
             speedText.text = "Speed: " + speedCounter.ToString();
 
             if(moveSpeed > 0)
             {
-                moveSpeed += 0.5f;
+                moveSpeed += 0.75f;
             }
             else
             {
-                moveSpeed -= 0.5f;
+                moveSpeed -= 0.75f;
             }
             
             speedTimer = 0;
@@ -125,8 +125,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canJump)
         {
+            if(PlayerPrefs.GetString("Music") == "on")
+            {
+                jumpSound.Play();
+            }
+
             canJump = false;
-            jumpSound.Play();
             myBody.velocity = Vector2.zero;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             anim.CheckJump(canJump);
@@ -138,13 +142,21 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.tag == "Block" && !inviz)
         {
             gameManager.death = "Block";
-            deathSound.Play();
             Die();
+
+            if(PlayerPrefs.GetString("Music") == "on")
+            {
+                deathSound.Play();
+            }
         }
 
         if(other.gameObject.tag == "Enemy" && !inviz)
         {
-            deathSound.Play();
+            if(PlayerPrefs.GetString("Music") == "on")
+            {
+                deathSound.Play();
+            }
+
             Die();
         }
 

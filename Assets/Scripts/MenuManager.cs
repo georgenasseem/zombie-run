@@ -54,8 +54,8 @@ public class MenuManager : MonoBehaviour
     private string[] skinNames = {"Anna", "Larry", "Halfdan", "Roger", "Uriel", "Victor", "Winzy", "Randall", "Lynch", "Akira", "Darth"};
     public string music = "on";
     private string purchaseRemoveAds = "com.georgenasseem.zombierun.removeads";
-    private string purchase1kstars = "com.georgenasseem.zombierun.1500stars";
-    private string purchase5kstars = "com.georgenasseem.zombierun.6000stars";
+    private string purchase1kstars = "com.georgenasseem.zombierun.2500stars";
+    private string purchase5kstars = "com.georgenasseem.zombierun.10000stars";
 
     public int rewardAmount = 100;
     private int skinIndex;
@@ -87,6 +87,12 @@ public class MenuManager : MonoBehaviour
 
         ChangeMenuSprite();
         PlayerPrefs.SetString("0", "Buy");
+
+        if(!PlayerPrefs.HasKey("FirstTime"))
+        {
+            PlayerPrefs.SetString("FirstTime", "Yes");
+            Click();
+        }
 
         if(PlayerPrefs.HasKey("Highscore"))
         {
@@ -418,15 +424,15 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.SetInt("Ads", 1);
     }
 
-    public void Buy1kstars()
+    public void Buy25000stars()
     {
-        PlayerPrefs.SetInt("Stars", PlayerPrefs.GetInt("Stars") + 1500);
+        PlayerPrefs.SetInt("Stars", PlayerPrefs.GetInt("Stars") + 2500);
         starText.text = PlayerPrefs.GetInt("Stars").ToString();
     }
 
-    public void Buy5kstars()
+    public void Buy10000stars()
     {
-        PlayerPrefs.SetInt("Stars", PlayerPrefs.GetInt("Stars") + 6000);
+        PlayerPrefs.SetInt("Stars", PlayerPrefs.GetInt("Stars") + 10000);
         starText.text = PlayerPrefs.GetInt("Stars").ToString();
     }
 
@@ -438,11 +444,11 @@ public class MenuManager : MonoBehaviour
         }
         else if(product.definition.id == purchase1kstars)
         {
-            Buy1kstars();
+            Buy25000stars();
         }
         else if(product.definition.id == purchase5kstars)
         {
-            Buy5kstars();
+            Buy10000stars();
         }
     }
 
